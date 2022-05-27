@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1 id="title">SWIFT CUSTOMER RESPONSE SURVEY</h1>
+        <p id="description" >
+          We appreciate  you taking this survey.Your response  is valued
+        </p>
+      </header>
+      <form id="survey-form">
+        <div>
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+
+            required
+          />
+        </div>
+        <div>
+          <label id="email-label"  for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+        </div>
+        <div>
+          <label id="number-label" for="number"
+            ></label
+          >
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Number"
+            min="10"
+            max="99"
+            
+            placeholder="number"
+          />
+        </div>
+        <div>
+          <p>Give us your feed back</p>
+          <select id="dropdown" name="role"  required>
+            <option disabled selected value>Select FeedBack</option>
+            <option value="Satisfied">SATISFIED</option>
+            <option value="Disatisfied">DISATISFIED</option>
+            
+          </select>
+        </div>
+
+        <div>
+          <p>Would you Refer this service to a friend</p>
+          <label>
+            <input
+              name="customer"
+              value="definitely"
+              type="radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+            />Maybe</label
+          >
+        </div>
+
+        <div>
+          <p>
+            Whould you
+            <span>(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="web design"
+              type="checkbox"
+            />web design</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="android app development"
+              type="checkbox"
+            />Android  app devolopment</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+            />Ios app development</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+            />Desktop app development</label
+          >
+         
+        <div>
+          <p>Any valuable suggestion</p>
+          <textarea
+            id="comments"
+            name="comment"
+            placeholder="enter suggestion"
+          ></textarea>
+        </div>
+
+        <div>
+          <button type="submit" id="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
